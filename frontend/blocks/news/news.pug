@@ -1,0 +1,28 @@
+mixin news()
+    .news&attributes(attributes)= name
+        .container.news__container
+            .news__wrapper
+                .news__title.title-category Новости
+                .news__list
+                    .news__tale
+                        .news__tale-image
+                            a(href="javascript:void(0)")
+                                img(src=require('../image/news-preview.jpg'))
+                        .news__tale-annotation
+                            p.news__tale-date 03.02.2017
+                            a(href="javascript:void(0)").news__tale-introtext Новая Зеландия - потерянный рай
+                    .news__tale
+                        .news__tale-image
+                            a(href="javascript:void(0)")
+                                img(src=require('../image/news-preview.jpg'))
+                        .news__tale-annotation
+                            p.news__tale-date 03.02.2017
+                            a(href="javascript:void(0)").news__tale-introtext Парусный спорт в Стокгольме! Тебе понравится это!
+                    .news__tale
+                        .news__tale-image
+                            a(href="javascript:void(0)")
+                                img(src=require('../image/news-preview.jpg'))
+                        .news__tale-annotation
+                            p.news__tale-date 03.02.2017
+                            a(href="javascript:void(0)").news__tale-introtext Мирное время в Копенгагене
+                a(href="javascript:void(0)").news__all-link Все новости

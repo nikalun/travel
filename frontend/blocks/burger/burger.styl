@@ -1,0 +1,63 @@
+.burger
+	padding-top 16px
+	display none
+	opacity 0
+	visibility hidden
+	cursor pointer
+	transition all .5s ease
+	
+	@media (max-width 767px)
+		opacity 1
+		visibility visible
+		display block
+		
+	span
+		position relative
+		display block
+		width 24px
+		height 2px
+		background-color dark-blue
+		transition: background .3s linear;
+		
+		&::before,
+		&::after
+			position absolute
+			left 0
+			content ''
+			display block
+			width 14px
+			height 2px
+			background-color dark-blue
+			transition-duration .3s, .3s, .3s, 0s
+			transition-delay .3s, 0s, 0s
+		
+		&::before
+			top -8px
+			transition-property top, transform, background, width
+
+			
+		&::after
+			bottom -8px
+			transition-property bottom, transform, background, width
+
+	&--click
+		
+		span
+			background-color transparent
+						
+			&::before,
+			&::after
+				width 100%
+				background-color dark-gold
+				transition-delay 0s, .3s, 0s
+				
+			&::before
+				top 0
+				transform rotate(45deg)
+			
+			&::after
+				bottom 0
+				transform rotate(-45deg)
+				
+			
+			

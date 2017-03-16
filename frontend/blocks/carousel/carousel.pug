@@ -1,0 +1,23 @@
+mixin carousel()
+    .carousel.js-carousel&attributes(attributes)= name
+        .container.carousel__container
+            .carousel__nav
+                .js-carousel-prev.carousel__arrow.carousel__arrow-prev
+                .js-carousel-next.carousel__arrow.carousel__arrow-next
+            .carousel__container.swiper-container.js-carousel-container
+                .carousel__wrapper.swiper-wrapper
+                    .carousel__item.swiper-slide(style="background-image: url(" + require('../image/photo-1.jpg') + ")")
+                        a(href="javascript:void(0)").carousel__item-link
+                            .carousel__item-border
+                                span Парусный спорт в Стокгольме!
+                                span Тебе понравится это!
+                    .carousel__item.swiper-slide(style="background-image: url(" + require('../image/photo-2.jpg') + ")")
+                        a(href="javascript:void(0)").carousel__item-link
+                            .carousel__item-border
+                                span Парусный спорт в Стокгольме!
+                                span Тебе понравится это!
+                    .carousel__item.swiper-slide(style="background-image: url(" + require('../image/photo-3.jpg') + ")")
+                        a(href="javascript:void(0)").carousel__item-link
+                            .carousel__item-border
+                                span Парусный спорт в Стокгольме!
+                                span Тебе понравится это!

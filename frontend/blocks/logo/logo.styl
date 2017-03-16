@@ -1,0 +1,55 @@
+.logo
+	text-align center
+	
+	a
+		position relative
+		font 60px/27px proxima
+		text-transform uppercase
+		text-decoration none
+		color dark-blue
+		
+		@media (max-width 767px)
+			padding-left 5px
+			text-align center
+			font-size 27px
+		
+		&::before
+			position absolute
+			left -39px
+			top 'calc(%s - %s)' % (50% 2px)
+			content ''
+			display block
+			width 30px
+			height 2px
+			background-color dark-blue
+			
+			@media (max-width 767px)
+				left -11px
+				width 13px
+				height 1px
+			
+		&::after
+			position absolute
+			right -39px
+			top 'calc(%s - %s)' % (50% 2px)
+			content ''
+			display block
+			width 30px
+			height 2px
+			background-color dark-blue
+			
+			@media (max-width 767px)
+				right -16px
+				width 13px
+				height 1px
+		
+	span
+		margin-top 6px
+		display block
+		font-size 16px
+		font-weight 300
+		line-height 27px
+		color light-gray
+		
+		@media (max-width 767px)
+			display none

@@ -1,0 +1,61 @@
+.menu
+	border-top 2px solid border-menu
+	
+	@media (max-width 767px)
+		position absolute
+		z-index 3
+		opacity 0
+		visibility hidden
+		top 33px
+		background-color bg-news
+		transition all .5s ease
+	
+	&--open
+		border-top-color transparent
+		opacity 1
+		visibility visible
+	
+	&__ul
+		padding_x(8px)
+		display flex
+		flex-wrap wrap
+		flex-direction row
+		justify-content space-between
+		
+		@media (max-width 767px)
+			padding-top 16px
+			padding-bottom 72px
+		
+	&__li
+		
+		@media (max-width 767px)
+			width 100%
+			text-align center
+		
+		a
+			padding-top 15px
+			padding-bottom 17px
+			display block
+			font-size 18px
+			line-height 27px
+			text-transform uppercase
+			text-decoration none
+			letter-spacing 1px
+			color dark-blue
+			transition all .5s ease
+			
+			@media (max-width 767px)
+				padding-top 0
+				padding-bottom 0
+				font-size 24px
+				line-height 60px
+			
+			&:hover
+				color dark-gold
+				
+		&--active
+			
+			a
+				color dark-gold
+		
+		

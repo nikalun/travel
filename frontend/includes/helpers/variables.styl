@@ -1,0 +1,51 @@
+/*colors*/
+
+light-brown = #d6ae9a
+dark-gold = #b8907b
+light-gray = #9c9c9c
+dark-blue = #485368
+white = #fff
+border-menu = #eee
+image-border = #f3f3f3
+bg-news = #f5f5f5
+soc-footer = #667085
+footer-text = #b4bbca
+
+
+/*mixins*/
+
+padding_x(size)
+    padding-left size
+    padding-right size
+
+padding_y(size)
+    padding-top size
+    padding-bottom size
+
+margin_x(size)
+    margin-left size
+    margin-right size
+
+margin_y(size)
+    margin-top size
+    margin-bottom size
+
+// Fonts mixin
+font-url(file)
+    return './../fonts/' + file
+
+webfont(family, file, hack-chrome-windows = false, weight = 'normal')
+    @font-face
+        font-family family
+        src url('./../fonts/' + file + '.eot')
+        src url('./../fonts/' + file + '.eot?#iefix') format('embedded-opentype'),
+            url('./../fonts/' + file + '.woff') format('woff'),
+            url('./../fonts/' + file + '.ttf') format('truetype'),
+            url('./../fonts/' + file + '.svg#'+ family) format('svg')
+        font-weight weight
+        font-style style
+
+/*fonts*/
+
+ubuntu = 'Ubuntu', sans-serif
+proxima = 'ProximaNovaExCn-Bold';

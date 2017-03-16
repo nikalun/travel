@@ -1,0 +1,75 @@
+@import 'normalize.styl'
+
+webfont('ProximaNovaExCn-Bold', 'ProximaNovaExCn-Bold', 'normal')
+
+*
+    font 16px/26px ubuntu
+    
+h1
+    position relative
+    margin-bottom 32px
+    padding-bottom 31px
+    font-size 48px
+    font-weight 500
+    line-height 27px
+    text-transform uppercase
+    color dark-gold
+    
+    @media all and (-webkit-min-device-pixel-ratio:0)
+        padding-bottom 35px
+    
+    @media (max-width 767px)
+        margin-bottom 13px
+        padding-bottom 22px
+        font-size 36px
+        
+    &::before
+        position absolute
+        left 0
+        bottom 0
+        content ''
+        display block
+        width 30px
+        height 2px
+        background-color dark-gold
+    
+.container
+    position relative
+    padding_x(30px)
+    margin_x(auto)
+    max-width 1170px
+    width 100%
+    
+    @media (max-width 767px)
+        padding_x(20px)
+    
+.title-category
+    font-size 24px
+    font-weight 500
+    line-height 27px
+    text-transform uppercase
+    color dark-gold
+    
+    
+.main
+    
+    &__carousel
+        margin-top 30px
+    
+        @media (max-width 767px)
+            margin-top 10px
+        
+    &__news
+        background-color bg-news
+        margin-top 99px
+        padding-top 60px
+        padding-bottom 88px
+    
+        @media (max-width 767px)
+            margin-top 60px
+            padding-bottom 65px
+            padding-top 40px
+    
+            @media all and (-webkit-min-device-pixel-ratio:0)
+                padding-bottom 62px
+        

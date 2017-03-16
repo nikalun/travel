@@ -1,0 +1,19 @@
+include ../soc-networks/soc-networks
+include ../logo/logo
+include ../call-me/call-me
+include ../menu/menu
+include ../burger/burger
+
+mixin header()
+    header.js-header&attributes(attributes)= name
+        .header
+            .container.header__container
+                +burger(class="header__burger")
+
+                +soc-networks(class="header__soc-networks")
+
+                +logo(class="header__logo")
+
+                +call-me(class="header__call-me")
+
+            +menu(class="header__menu")

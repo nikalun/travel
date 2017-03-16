@@ -1,0 +1,33 @@
+.image-border
+	padding_x(40px)
+	width 350px
+	box-sizing border-box
+	
+	@media (max-width 767px)
+		left 50%
+		padding_x(36px)
+		width 320px
+		transform translateX(-50%)
+	
+	
+	&::before
+		content ''
+		display block
+		width 100%
+		height 404px
+		box-sizing border-box
+		border 10px solid image-border
+		
+		@media (max-width 767px)
+			height 368px
+			width 247px
+	
+	&__picture
+		position absolute
+		left 0
+		top 'calc(%s - %s)' % (50% 117px)
+		
+		@media (max-width 767px)
+			top 'calc(%s - %s)' % (50% 107px)
+			width 100%
+		

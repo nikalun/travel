@@ -1,0 +1,47 @@
+.text
+	
+	&__inner
+		position relative
+		
+		
+		&::after
+			position absolute
+			left 0
+			bottom 0
+			content ''
+			display block
+			width 100%
+			height 55px
+			background-image linear-gradient(to top, rgba(white, 50%), rgba(white, 50%))
+			
+			@media (max-width 767px)
+				height 100px
+	
+	&__more
+		margin-top 10px
+		padding_y(4px)
+		padding_x(32px)
+		display inline-block
+		font-size 16px
+		line-height 27px
+		text-decoration none
+		color dark-blue
+		border 2px dark-blue solid
+		border-radius 20px
+		
+		@media (max-width 767px)
+			margin-top 11px
+			font-size 14px
+			padding-top 0
+			padding-bottom 3px
+			padding-left 29px
+			padding-right 28px
+		
+	p
+		margin-bottom 22px
+		font-size 16px
+		line-height 27px
+		
+		@media (max-width 767px)
+			font-size 14px
+			line-height 24px

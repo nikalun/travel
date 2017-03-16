@@ -1,0 +1,62 @@
+.footer
+	padding-top 80px
+	padding-bottom 42px
+	background-color dark-blue
+	
+	@media (max-width 767px)
+		padding-top 40px
+	
+	&__container
+		display flex
+		flex-direction row
+		flex-wrap wrap
+		justify-content space-between
+	
+	&__soc-networks
+		order 1
+		width 34.3%
+		
+		@media (max-width 767px)
+			width 100%
+		
+		a
+			background-color soc-footer !important
+			
+	&__menu-list
+		order 2
+		width 65.7%
+		
+		@media (max-width 767px)
+			margin-top 49px
+			width 100%
+		
+	&__copyright
+		order 3
+		margin-top 37px
+		width 33.5%
+		
+		@media (max-width 767px)
+			margin-top 47px
+			order 4
+ 
+	&__address,
+	&__developer
+		margin-top 37px
+		
+	&__address
+		order 4
+		width 39.5%
+		
+		@media (max-width 767px)
+			margin-top 42px
+			padding-right 20%
+			order 3
+			width 100%
+		
+	&__developer
+		order 5
+		width 27%
+		text-align right
+		
+		@media (max-width 767px)
+			margin-top 44px

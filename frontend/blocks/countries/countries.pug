@@ -1,0 +1,7 @@
+mixin countries()
+    -var list = ['Австрия','Бельгия','Бразилия','Венгрия','Белоруссия','Болгария','Великобритания','Вьетнам']
+    .countries&attributes(attributes)= name
+        nav.countries__nav
+            ul.countries__ul
+                each li in list
+                    li.countries__li: a(href="javascript:void(0)")= li

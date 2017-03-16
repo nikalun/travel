@@ -1,0 +1,20 @@
+include ../soc-networks/soc-networks
+include ../menu-list/menu-list
+include ../copyright/copyright
+include ../address/address
+include ../developer/developer
+
+mixin footer()
+    .footer&attributes(attributes)= name
+        .container.footer__container
+
+            +soc-networks(class="footer__soc-networks")
+
+            +menu-list(class="footer__menu-list")
+
+            +copyright(class="footer__copyright")
+
+            +address(class="footer__address")
+
+            +developer(class="footer__developer")
+

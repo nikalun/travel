@@ -1,0 +1,16 @@
+mixin slider()
+    .slider.js-slider&attributes(attributes)= name
+        .container
+            .slider__nav
+                .js-slider-prev.slider__arrow.slider__arrow-prev
+                .js-slider-next.slider__arrow.slider__arrow-next
+        .slider__container.swiper-container.js-slider-container
+            .slider__wrapper.swiper-wrapper
+                .slider__item.swiper-slide(style="background-image: url(" + require('../image/slide-1.jpg') + ")")
+                    .container
+                        p.slider__item-title discover
+                        p.slider__item-subtitle Мир, который вы никогда не видели
+                .slider__item.swiper-slide(style="background-image: url(" + require('../image/slide-2.jpg') + ")")
+                    .container
+                        p.slider__item-title  Travel
+                        p.slider__item-subtitle Место уже стало культовым среди туристов

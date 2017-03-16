@@ -1,0 +1,12 @@
+mixin menu()
+    -var list = ['Главная','О проекте','Туры','Страны','Блог','Сотрудничество','Контакты']
+
+    .menu.js-menu&attributes(attributes)= name
+        .container.menu__container
+            nav.menu__nav
+                ul.menu__ul
+                    each li in list
+                        if li == 'Главная'
+                            li.menu__li.menu__li--active: a(href="javascript:void(0)")= li
+                        else
+                            li.menu__li: a(href="javascript:void(0)")= li

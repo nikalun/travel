@@ -1,0 +1,15 @@
+include ../countries/countries
+include ../text/text
+include ../image-border/image-border
+
+mixin content()
+    .content&attributes(attributes)= name
+        .container.content__container
+            +countries(class="content__countries")
+
+            +text(class="content__text")
+
+            +image-border(class="content__image-border")
+
+
+

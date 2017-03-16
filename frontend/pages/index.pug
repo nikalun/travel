@@ -1,0 +1,28 @@
+extends ../includes/layout
+
+include ../blocks/header/header
+include ../blocks/slider/slider
+include ../blocks/carousel/carousel
+include ../blocks/content/content
+include ../blocks/news/news
+include ../blocks/footer/footer
+
+block header
+    +header
+
+block content
+
+    +slider
+
+    +carousel(class="main__carousel")
+
+    +content
+
+    +news(class="main__news")
+
+block footer
+    footer
+        +footer
+
+
+

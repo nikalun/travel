@@ -1,0 +1,67 @@
+.slider
+	position relative
+	height 600px
+	
+	@media (max-width 767px)
+		height 173px
+			
+	&__container
+		height 100%
+		
+	&__arrow
+		position absolute
+		z-index 2
+		top 282px
+		width 36px
+		height 36px
+		background-image url(../../image/svg/arrow-next.svg)
+		background-size cover
+		background-position center
+		cursor pointer
+		
+		@media (max-width 767px)
+			top 76px
+			width 20px
+			height 20px
+			
+	&__arrow-prev
+		left -10px
+		transform rotate(180deg)
+		
+	&__arrow-next
+		right -10px
+		
+	&__item
+		display flex
+		align-items center
+		text-align center
+		background-size cover
+		background-position center
+		
+	&__item-title
+		margin-top -53px
+		font-size 72px
+		line-height 102px
+		text-transform uppercase
+		color white
+		
+		@media (max-width 767px)
+			margin-top 3px
+			font-size 36px
+			line-height 27px
+		
+	&__item-subtitle
+		font-size 20px
+		line-height 27px
+		text-transform uppercase
+		color white
+		
+		@media (max-width 767px)
+			margin-top 16px
+			padding_x(45px)
+			font-size 16px
+			line-height 22px
+		
+	&__nav
+		position relative
+		height 100%

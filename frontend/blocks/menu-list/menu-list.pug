@@ -1,0 +1,7 @@
+mixin menu-list()
+    -var list = ['Главная','О проекте','Туры','Страны','Блог','Сотрудничество','Контакты']
+    .menu-list&attributes(attributes)= name
+        nav.menu-list__nav
+            ul.menu-list__ul
+                each li in list
+                    li.menu-list__li: a(href="javascript:void(0)")= li

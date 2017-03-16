@@ -1,0 +1,49 @@
+.countries
+	
+	&__ul
+		display flex
+		flex-wrap wrap
+		flex-direction row
+		justify-content flex-start
+		
+	&__li
+		position relative
+		padding-left 18px
+		width 190px
+		
+		@media (max-width 767px)
+			padding-left 16px
+			width 50%
+			
+			&:nth-of-type(2n)
+				padding-left 27px
+			
+				&::before
+					left 10px
+		
+		&::before
+			position absolute
+			left 0
+			top 'calc(%s - %s)' % (50% 4px)
+			content ''
+			display block
+			width 8px
+			height 8px
+			box-sizing border-box
+			border 2px solid dark-gold
+			border-radius 50%
+		
+		a
+			font-size 16px
+			line-height 26px
+			font-weight 300
+			text-decoration none
+			color dark-blue
+			transition all .5s ease
+			
+			@media (max-width 767px)
+				font-size 14px
+				line-height 34px
+			
+			&:hover
+				color dark-gold
